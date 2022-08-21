@@ -1,0 +1,137 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(210, 19%, 18%);
+    --Dark-Blue: hsl(215, 22%, 15%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    line-height: 1.3rem;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: var(--Very-Dark-Blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: var(--Dark-Blue);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.star {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--Medium-Grey);
+    display: flex;
+    justify-content: center;
+}
+
+.star__img {
+    width: 15px;
+    height: 15px;
+    margin-top: 11px;
+}
+
+h1 {
+    color: var(--White);
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: 1.3rem;
+}
+
+p {
+    color: var(--Light-Grey);
+    font-weight: 400;
+    margin-top: 1.3rem;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-top: 1.3rem;    
+    text-align: center;    
+}
+
+li {    
+    width: 30px;
+    /* height: 40px; */
+    list-style: none;
+    border-radius: 20px;
+    background-color: var(--Medium-Grey);     
+    justify-content: center; 
+    padding: .5rem;   
+    color: var(--White);  
+    font-weight: 400;    
+}
+
+
+li:hover{
+    color: var(--White);
+    background-color: var(--Orange);
+}
+
+li:active{
+    background-color: aqua;
+}
+
+button{
+    width: 100%;
+    margin-top: 1.3rem;
+    height: 2.5rem;
+    background-color: var(--Orange);
+    color: var(--White);
+    border-radius: 20px;
+    border-style: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    
+}
+
+button:hover{
+    color: var(--Orange);
+    background-color: var(--White);
+}
+
+.img__thanks{
+    text-align: center;
+}
+
+.selected{
+    color: var(--Orange);
+    text-align: center;
+    background-color: var(--Medium-Grey);
+    border-radius: 10px;     
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.grade{
+    color: var(--Orange);
+    vertical-align: middle;
+    padding: .2rem;
+}
+
+
+.ative{
+    display: none;
+}
+
+.attribution{
+    text-align: center;
+}
